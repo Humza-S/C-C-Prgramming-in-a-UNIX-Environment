@@ -1,0 +1,21 @@
+# file_manip: Takes the name of a directory as an argument and searches the file hierarchy rooted at that directory for
+# zero-length files. Write the names of all zero-length files to standard output. If there is no option on the command line,
+# have the script delete the file after displaying its name, asking the user for confirmation, and receiving positive confirmation.
+# A –f (force) option on the command line indicates that the script should display the filename but not ask for confirmation before
+# deleting the file.
+
+if [ $# -eq 0 -o $# -gt 2 ]; then # checks to see if the number of arguments passed in is 0 or more than 2.
+		echo "Error: Must have arguments between 1 and 2."
+		echo "$1 = -f (optional argument)"
+		echo "$2 = dir (defaults to $1 if the optional argument is not used)"
+		e xit 1 # exits the program since an error was encountered
+fi
+
+
+# checks if an option was passed in, if it was, then it force deletes all empty (meaning zero-length) files and prints them
+if [ "$1" == "-f" ]; then
+	find $2 -empty -print -exec rm -f {} \;
+
+	else	# if no option was passed in, it prints the file and deletes it, each time asking for confirmation(-ok)
+		find $1 -empty -print -ok rm -f {} \;
+fi

@@ -1,0 +1,8 @@
+# b_find: list all files you have read access to on the system (starts from root folder) that are larger than 1 megabyte.
+
+# uses the find utility to check if a file is has permissions for the user to read,
+# and that it has a size of greater than 1 megabyte.
+# also uses xargs and -n1 to take the files which qualify and output them in a list.
+find / -perm /u=r -size +1M | xargs -n1 echo
+
+

@@ -1,0 +1,243 @@
+{cslinux1:~/assg1exercise4} cd ..
+{cslinux1:~} chmo 700 assg1exercise4
+bash: chmo: command not found...
+{cslinux1:~} chmod 700 assg1exercise4
+{cslinux1:~} rmdir assg1exercise4
+{cslinux1:~} clear
+{cslinux1:~} ls -l
+total 280
+d--x------ 3 mhs180007 sn   21 Jan 26 17:41 assg1
+-rwx--x--x 1 mhs180007 sn 8976 Jan 23 19:19 helloworld
+-rw------- 1 mhs180007 sn  437 Jan 23 19:31 helloworld.cpp
+drwxr-xr-x 2 mhs180007 sn    0 Jan 16 22:47 perl5
+drwx--x--x 2 mhs180007 sn    0 Jul  1  2019 public_html
+drwx--x--x 2 mhs180007 sn   25 Jan 26 18:38 srcdir
+drwx--x--x 2 mhs180007 sn    0 Jan 26 18:37 targetdir
+{cslinux1:~} chmod 000 srcdir
+{cslinux1:~} chmod 000 targetdir
+{cslinux1:~} ls -l
+total 280
+d--x------ 3 mhs180007 sn   21 Jan 26 17:41 assg1
+-rwx--x--x 1 mhs180007 sn 8976 Jan 23 19:19 helloworld
+-rw------- 1 mhs180007 sn  437 Jan 23 19:31 helloworld.cpp
+drwxr-xr-x 2 mhs180007 sn    0 Jan 16 22:47 perl5
+drwx--x--x 2 mhs180007 sn    0 Jul  1  2019 public_html
+d--------- 2 mhs180007 sn   25 Jan 26 18:38 srcdir
+d--------- 2 mhs180007 sn    0 Jan 26 18:37 targetdir
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} chmod 000 srcdir/srcfile
+{cslinux1:~} chmod 0700 srcdir
+{cslinux1:~} chmod 000 srcdir
+{cslinux1:~} chmod 000 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 200 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 400 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 300 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 500 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 600 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} chmod 100 targetdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot open ‘srcdir/srcfile’ for reading: Permission denied
+{cslinux1:~} chmod 400 srcdir/srcfile
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot create regular file ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 200 targetdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 300 targetdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+{cslinux1:~} cd targetdir
+{cslinux1:~/targetdir} ls
+ls: cannot open directory .: Permission denied
+{cslinux1:~/targetdir} ls -l
+ls: cannot open directory .: Permission denied
+{cslinux1:~/targetdir} chmod 400 targetdir
+chmod: cannot access ‘targetdir’: No such file or directory
+{cslinux1:~/targetdir} cd ..
+{cslinux1:~} chmod 400 targetdir
+{cslinux1:~} cd targetdir
+-bash: cd: targetdir: Permission denied
+{cslinux1:~} chmod 700 targetdir
+{cslinux1:~} cd targetdir
+{cslinux1:~/targetdir} ls -l
+total 24
+-r-------- 1 mhs180007 sn 0 Jan 26 19:07 srcfile
+{cslinux1:~/targetdir} rm srcfile
+rm: remove write-protected regular empty file ‘srcfile’? yes
+{cslinux1:~/targetdir} ls -l
+total 0
+{cslinux1:~/targetdir} chmod 100 targetdir
+chmod: cannot access ‘targetdir’: No such file or directory
+{cslinux1:~/targetdir} cd ..
+{cslinux1:~} chmod 100 targetdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot create regular file ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 100 srcir
+chmod: cannot access ‘srcir’: No such file or directory
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot create regular file ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 200 targetdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+cp: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 300 targetdir
+{cslinux1:~} cp srcdir/srcfile targetdir/
+{cslinux1:~} chmod 700 targetdir
+{cslinux1:~} ls
+assg1  helloworld  helloworld.cpp  perl5  public_html  srcdir  targetdir
+{cslinux1:~} ls -l targetdir
+total 24
+-r-------- 1 mhs180007 sn 0 Jan 26 19:13 srcfile
+{cslinux1:~} rm targetdir/srcfile
+rm: remove write-protected regular empty file ‘targetdir/srcfile’? yes
+{cslinux1:~} ls -l targetdir
+total 0
+{cslinux1:~} chmod 000 targetdir
+{cslinux1:~} chmod 000 srcir/srcfile
+chmod: cannot access ‘srcir/srcfile’: No such file or directory
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} chmod 000 srcdir/srcfile
+{cslinux1:~} chmod 000 srcdir
+{cslinux1:~} ls -l srcdir
+ls: cannot open directory srcdir: Permission denied
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot stat ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 200 srcdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot stat ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} chmod 100 srcdir/srcfile
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 100 targetdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot move ‘srcdir/srcfile’ to ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 200 targetdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot stat ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 300 targetdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot move ‘srcdir/srcfile’ to ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot move ‘srcdir/srcfile’ to ‘targetdir/srcfile’: Permission denied
+{cslinux1:~} chmod 200 srcdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+mv: cannot stat ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 300 srcdir
+{cslinux1:~} mv srcdir/srcfile targetdir
+{cslinux1:~} chmod 700 targetdir
+{cslinux1:~} ls -l targetdir
+total 24
+---x------ 1 mhs180007 sn 0 Jan 26 18:38 srcfile
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} ls -l srcdir
+total 0
+{cslinux1:~} chmod 000 srcdir/srcfile
+chmod: cannot access ‘srcdir/srcfile’: No such file or directory
+{cslinux1:~} chmod 000 targetdir/srcfile
+{cslinux1:~} chmod 300 targetdir
+{cslinux1:~} chmod 300 srcdir
+{cslinux1:~} mv targetdir/srcfile srcdir
+{cslinux1:~} chmod 400 srcdir
+{cslinux1:~} ls -l srcdir
+ls: cannot access srcdir/srcfile: Permission denied
+total 0
+-????????? ? ? ? ?            ? srcfile
+{cslinux1:~} chmod 400 srcdir
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} ls -l srcdir/[A
+ls: cannot access srcdir/[A: No such file or directory
+{cslinux1:~} ls -l srcdir
+total 24
+---------- 1 mhs180007 sn 0 Jan 26 18:38 srcfile
+{cslinux1:~} chmod 000 srcdir
+{cslinux1:~} chmod 000 targetdir
+{cslinux1:~} chmod 200 targetdir
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} ln srcdir/srcfile targetdir
+ln: failed to create hard link ‘targetdir/srcfile’ => ‘srcdir/srcfile’: Permissi                                                           on denied
+{cslinux1:~} chmod 300 targetdir
+{cslinux1:~} ln srcdir/srcfile targetdir
+{cslinux1:~} chmod 700 targetdir
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} ls -l targetdir
+total 24
+---------- 2 mhs180007 sn 0 Jan 26 18:38 srcfile
+{cslinux1:~} ls -l srcdir
+total 24
+---------- 2 mhs180007 sn 0 Jan 26 18:38 srcfile
+{cslinux1:~} chmod 000 targetdir
+{cslinux1:~} chmod 000 srcdir
+{cslinux1:~} chmod 200 srcdir
+{cslinux1:~} rm srcdir/srcfile
+rm: cannot remove ‘srcdir/srcfile’: Permission denied
+{cslinux1:~} chmod 300 srcdir
+{cslinux1:~} rm srcdir/srcfile
+rm: remove write-protected regular empty file ‘srcdir/srcfile’? yes
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} chmod 400 srcdir/srcfile
+chmod: cannot access ‘srcdir/srcfile’: No such file or directory
+{cslinux1:~} chmod 300 srcdir
+{cslinux1:~} 01/26/2020 >> srcdir/srcfile
+-bash: 01/26/2020: No such file or directory
+{cslinux1:~} date >> srcdir/srcfile
+{cslinux1:~} ls -l srcfile
+ls: cannot access srcfile: No such file or directory
+{cslinux1:~} ls -l srcdir
+ls: cannot open directory srcdir: Permission denied
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} ls -l srcdir
+total 48
+-rw------- 1 mhs180007 sn 29 Jan 26 19:34 srcfile
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} chmod 400 srcdir/srcfile
+{cslinux1:~} cat srcdir/srcfile targetdir
+Sun Jan 26 19:34:33 CST 2020
+cat: targetdir: Permission denied
+{cslinux1:~} cat srcdir/srcfile
+Sun Jan 26 19:34:33 CST 2020
+{cslinux1:~} chmod 300 srcdir/srcfile
+{cslinux1:~} cat srcdir/srcfile
+cat: srcdir/srcfile: Permission denied
+{cslinux1:~} chmod 400 srcdir/srcfile
+{cslinux1:~} cat srcdir/srcfile
+Sun Jan 26 19:34:33 CST 2020
+{cslinux1:~} chmod 100 srcdir/srcfile
+{cslinux1:~} chmod 100 srcdir
+{cslinux1:~} date >> srcdir/srcfile
+-bash: srcdir/srcfile: Permission denied
+{cslinux1:~} chmod 200 srcdir/srcfile
+{cslinux1:~} date >> srcdir/srcfile
+{cslinux1:~} chmod 700 srcdir
+{cslinux1:~} ls -l srcdir
+total 48
+--w------- 1 mhs180007 sn 58 Jan 26 19:42 srcfile
+{cslinux1:~} chmod 400 srcdir/srcfile
+{cslinux1:~} cat srcdir/srcfile
+Sun Jan 26 19:34:33 CST 2020
+Sun Jan 26 19:42:41 CST 2020
+{cslinux1:~} s
+bash: s: command not found...
+{cslinux1:~}

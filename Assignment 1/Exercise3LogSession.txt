@@ -1,0 +1,129 @@
+     +--------------------------------------------------------------------+
+     ¦                        • MobaXterm 12.4 •                          ¦
+     ¦            (SSH client, X-server and networking tools)             ¦
+     ¦                                                                    ¦
+     ¦ ? SSH session to mhs180007@cslinux1.utdallas.edu                   ¦
+     ¦   • SSH compression : ?                                            ¦
+     ¦   • SSH-browser     : ?                                            ¦
+     ¦   • X11-forwarding  : ?  (remote display is forwarded through SSH) ¦
+     ¦   • DISPLAY         : ?  (automatically set on remote server)      ¦
+     ¦                                                                    ¦
+     ¦ ? For more info, ctrl+click on help or visit our website           ¦
+     +--------------------------------------------------------------------+
+
+Last login: Sun Jan 26 17:22:46 2020 from vpn-10-40-0-237.utdallas.edu
+
+                       ***---***---***---***---***---***
+                    csgrads1.utdallas.edu - CentOS Linux 7.7
+                 --All CS Graduate Students should use csgrads1--
+                      cs1.utdallas.edu - CentOS Linux 7.7
+                      cs2.utdallas.edu - CentOS Linux 7.7
+                       ***---***---***---***---***---***
+
+This system is for use by CS students who need a general purpose Linux system
+to complete homework assignments.  Computationally or resource intensive
+simulations will be throttled automatically.
+
+Thank you,
+CS Lab Manager
+cs-labs@utdallas.edu
+
+               /scratch disk space can be used for temporary files.
+      All files within /scratch will be erased on a regular basis (Sunday 0300).
+
+{cslinux1:~} clear
+{cslinux1:~} cd
+{cslinux1:~} rm -rf assg1
+{cslinux1:~} mkir -p assg1/top
+bash: mkir: command not found...
+{cslinux1:~} mkdir -p assg1/top
+{cslinux1:~} cd assg1
+{cslinux1:~/assg1} chmod 000 top
+{cslinux1:~/assg1} cd top
+-bash: cd: top: Permission denied
+{cslinux1:~/assg1} touch top/file
+touch: cannot touch ‘top/file’: Permission denied
+{cslinux1:~/assg1} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: Permission denied
+{cslinux1:~/assg1} ls -l top
+ls: cannot open directory top: Permission denied
+{cslinux1:~/assg1} chmod 100 top
+{cslinux1:~/assg1} cd top
+{cslinux1:~/assg1/top} touch top/file
+touch: cannot touch ‘top/file’: No such file or directory
+{cslinux1:~/assg1/top} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: No such file or director                                                                             y
+{cslinux1:~/assg1/top} cd ..
+{cslinux1:~/assg1} touch top/file
+touch: cannot touch ‘top/file’: Permission denied
+{cslinux1:~/assg1} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: Permission denied
+{cslinux1:~/assg1} ls -l top
+ls: cannot open directory top: Permission denied
+{cslinux1:~/assg1} chmod 200 top
+{cslinux1:~/assg1} cd top
+-bash: cd: top: Permission denied
+{cslinux1:~/assg1} touch top/file
+touch: cannot touch ‘top/file’: Permission denied
+{cslinux1:~/assg1} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: Permission denied
+{cslinux1:~/assg1} ls -l top
+ls: cannot open directory top: Permission denied
+{cslinux1:~/assg1} chmod 300 top
+{cslinux1:~/assg1} cd top
+{cslinux1:~/assg1/top} cd d..
+-bash: cd: d..: No such file or directory
+{cslinux1:~/assg1/top} touch top/file
+touch: cannot touch ‘top/file’: No such file or directory
+{cslinux1:~/assg1/top} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: No such file or director                                                                             y
+{cslinux1:~/assg1/top} cd ..
+{cslinux1:~/assg1} touch top/file
+{cslinux1:~/assg1} rm top/file
+rm: remove regular empty file ‘top/file’? yes
+{cslinux1:~/assg1} mkdir top/dir
+{cslinux1:~/assg1} rmdir top/dir
+{cslinux1:~/assg1} ls -l top
+ls: cannot open directory top: Permission denied
+{cslinux1:~/assg1} chmod 400 top
+{cslinux1:~/assg1} cd top
+-bash: cd: top: Permission denied
+{cslinux1:~/assg1} touch top/file
+touch: cannot touch ‘top/file’: Permission denied
+{cslinux1:~/assg1} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: Permission denied
+{cslinux1:~/assg1} ls -l top
+total 0
+{cslinux1:~/assg1} chmod 400 top
+{cslinux1:~/assg1} chmod 500 top
+{cslinux1:~/assg1} cd top
+{cslinux1:~/assg1/top} cd ..
+{cslinux1:~/assg1} touch top/file
+touch: cannot touch ‘top/file’: Permission denied
+{cslinux1:~/assg1} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: Permission denied
+{cslinux1:~/assg1} ls -l top
+total 0
+{cslinux1:~/assg1} chmod 600 top
+{cslinux1:~/assg1} cd top
+-bash: cd: top: Permission denied
+{cslinux1:~/assg1} touch top/file
+touch: cannot touch ‘top/file’: Permission denied
+{cslinux1:~/assg1} mkdir top/dir
+mkdir: cannot create directory ‘top/dir’: Permission denied
+{cslinux1:~/assg1} ls -l top
+total 0
+{cslinux1:~/assg1} chmod 700 top
+{cslinux1:~/assg1} cd top
+{cslinux1:~/assg1/top} cd ..
+{cslinux1:~/assg1} touch top/file
+{cslinux1:~/assg1} rm top/file
+rm: remove regular empty file ‘top/file’? yes
+{cslinux1:~/assg1} mkdir top/dir
+{cslinux1:~/assg1} rmdir top/dir
+{cslinux1:~/assg1} rmdir top/dir
+rmdir: failed to remove ‘top/dir’: No such file or directory
+{cslinux1:~/assg1} ls -l top
+total 0
+{cslinux1:~/assg1} ^C
+{cslinux1:~/assg1}

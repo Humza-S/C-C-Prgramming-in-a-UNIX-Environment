@@ -1,0 +1,8 @@
+# a_find :  List all files in the working directory and all subdirectories that have been modified within the last day.
+
+# ./ is the working directory, and the find utility automatically checks subdirectories
+# -mtime is an option which checks what filed were modified n*24 hours ago
+# -1 represents n for the -mtime option
+# xargs is used to echo all the files outputted by the find utility
+# -n1 is used as an option to xargs to specify a maximum of one command line per argument, allowing for a list of the files
+find ./ -mtime -1 | xargs -n1 echo

@@ -1,0 +1,11 @@
+# date_man: this script displays the time every 15 seconds until the user exits the program via ^C,
+
+while [ : ] # this evaluates the while loop to always be true
+	do
+		clear # this commands clears the screen 
+
+		time=$(date '+%r') # +%r is a formatting option for the date command which gives the time on a 12-hr clock
+		echo "The current time is: $time" # outputting the current time
+		echo "Use ^C to exit the program" # notifies user how to exit program
+		sleep 15 # program goes idle for 15 seconds
+done

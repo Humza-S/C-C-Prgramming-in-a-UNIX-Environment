@@ -1,0 +1,6 @@
+# c_find : remove all files named core from the directory structure rooted at your home directory.
+
+# $HOME is the home directory, could also use ~
+# -name test checks for all files named core, and the * is there to find any extensions
+# -exec rm -f {} \ removes all the FILES -f (does not delete folders named core since exercise requires only files to be deleted)
+find $HOME -name "core*" -exec rm -f {} \; 

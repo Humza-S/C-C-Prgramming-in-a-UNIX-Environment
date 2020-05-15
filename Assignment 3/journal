@@ -1,0 +1,24 @@
+
+# journal: add journal entries to the file $HOME/journal-file
+
+file=$HOME/journal-file
+if [ ! -e $file ]; then # checks if the file does not exist, if it does not, then exits the bash script
+	echo "The given file ($file) does not exist"
+	exit 1
+	
+fi
+if [ -w $file ]; then # checks if the user can write to the file
+	# executes the following commands if the user has permission to write
+	date >> $file
+	echo -n "Enter name of person or group: "
+	read name
+	echo "$name" >> $file
+	echo >> $file
+	cat >> $file
+	echo "----------------------------------------------------" >> $file
+	echo >> $file
+	
+	else	# user does not have permission to write to the given file
+		echo "User does not have permission to write to the file: $file"
+fi
+

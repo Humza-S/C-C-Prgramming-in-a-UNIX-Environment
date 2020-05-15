@@ -1,0 +1,8 @@
+# e_find: List all files you have read access to on the root filesystem that have been modified in the last 30 days.
+
+# uses the find utility to go to the root folder
+# all files must have read permission for the user (-perm /u=r)
+# all files must have been modified in the last 30 days (-mtime -30) 30 represents 30*24 hours
+# uses the -exec command to output a list of all files.
+find / -perm /u=r -mtime -30 -exec ls -l {} \; 
+

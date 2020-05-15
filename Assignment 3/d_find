@@ -1,0 +1,6 @@
+# d_find: List the inode numbers of all files in the working directory whose filenames end in .c
+
+# finds all files in the current directory (./)
+# uses -name "*.c" to get all files with the extension of .c
+# uses -exec to execute the ls command with option -i, which returns the inode number of the file
+find ./ -name "*.c" -exec ls -i {} \;

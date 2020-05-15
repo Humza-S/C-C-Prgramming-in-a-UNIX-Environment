@@ -1,0 +1,193 @@
+login as: mhs180007
+Pre-authentication banner message from server:
+|                       University of Texas at Dallas
+|                       Department of Computer Science
+|
+|                 Use of UTD Information Systems is subject to
+|           the UTD Information Security and Acceptable Use Policy.
+|
+|   Pursuant to Texas Administrative Code 202:
+|   (1) Unauthorized use is prohibited;
+|   (2) Usage may be subject to security testing and monitoring;
+|   (3) Misuse is subject to criminal prosecution; and
+|   (4) No expectation of privacy except as otherwise provided by ap      plicable
+|       privacy laws.
+|
+|       If five (5) incorrect passwords are received from your IP ad      dress,
+|     this system will ban your IP address access for twenty-four (2      4) hours.
+|
+|        ATTENTION: utdnetid != utdnetid@utdallas.edu (UTD != Google      !)
+|
+|   [[NOTE: All CS Graduate Students should use csgrads1.utdallas.ed      u      ]]
+|   [[   If you are a CS Graduate Student, you cannot logon to this       server.]]
+|
+End of banner message from server
+     +--------------------------------------------------------------      ------+
+     ¦                        • MobaXterm 12.4 •                                ¦
+     ¦            (SSH client, X-server and networking tools)                   ¦
+     ¦                                                                          ¦
+     ¦ ? SSH session to mhs180007@cslinux1.utdallas.edu                         ¦
+     ¦   • SSH compression : ?                                                  ¦
+     ¦   • SSH-browser     : ?                                                  ¦
+     ¦   • X11-forwarding  : ?  (remote display is forwarded through       SSH) ¦
+     ¦   • DISPLAY         : ?  (automatically set on remote server)            ¦
+     ¦                                                                          ¦
+     ¦ ? For more info, ctrl+click on help or visit our website                 ¦
+     +--------------------------------------------------------------      ------+
+
+Last login: Fri Jan 17 17:29:20 2020 from vpn-10-40-0-172.utdallas.e      du
+
+                       ***---***---***---***---***---***
+                    csgrads1.utdallas.edu - CentOS Linux 7.7
+                 --All CS Graduate Students should use csgrads1--
+                      cs1.utdallas.edu - CentOS Linux 7.7
+                      cs2.utdallas.edu - CentOS Linux 7.7
+                       ***---***---***---***---***---***
+
+This system is for use by CS students who need a general purpose Lin      ux system
+to complete homework assignments.  Computationally or resource inten      sive
+simulations will be throttled automatically.
+
+Thank you,
+CS Lab Manager
+cs-labs@utdallas.edu
+
+               /scratch disk space can be used for temporary files.
+      All files within /scratch will be erased on a regular basis (S      unday 0300).
+
+{cslinux1:~} whoami
+mhs180007
+{cslinux1:~} mkdir test
+{cslinux1:~} cd test
+{cslinux1:~/test} cp /people/cs/m/mxb135330/stanford_c++/* .
+{cslinux1:~/test} ls -ltr
+total 864
+-rwx--x--x 1 mhs180007 sn 34522 Jan 17 17:58 01CS193DCourseInformati      on.pdf
+-rwx--x--x 1 mhs180007 sn  8834 Jan 17 17:58 02CS193DCourseSyllabus.      pdf
+-rwx--x--x 1 mhs180007 sn 41374 Jan 17 17:58 03UnixBasics.pdf
+-rwx--x--x 1 mhs180007 sn 68165 Jan 17 17:58 04UnixDevelopment.pdf
+-rwx--x--x 1 mhs180007 sn 44336 Jan 17 17:58 05Assignment1OAG.pdf
+-rwx--x--x 1 mhs180007 sn 44748 Jan 17 17:58 06SectionHandout2.pdf
+-rwx--x--x 1 mhs180007 sn 12694 Jan 17 17:58 07CodingStandards.pdf
+-rwx--x--x 1 mhs180007 sn 10243 Jan 17 17:58 08GoodStyle.pdf
+-rwx--x--x 1 mhs180007 sn 22344 Jan 17 17:58 10AchievingReadability.      pdf
+-rwx--x--x 1 mhs180007 sn 34888 Jan 17 17:58 11Classes.pdf
+-rwx--x--x 1 mhs180007 sn 56829 Jan 17 17:58 12SectionHandoutWeek3.p      df
+-rwx--x--x 1 mhs180007 sn 12742 Jan 17 17:58 13Constructors.pdf
+-rwx--x--x 1 mhs180007 sn 14789 Jan 17 17:58 14CopyConstructors.pdf
+-rwx--x--x 1 mhs180007 sn 15488 Jan 17 17:58 15Assignment2RSG.pdf
+-rwx--x--x 1 mhs180007 sn 15573 Jan 17 17:58 16PracticeCS193DMidterm      .pdf
+-rwx--x--x 1 mhs180007 sn 15061 Jan 17 17:58 17PracticeCS193DSolutio      n.pdf
+-rwx--x--x 1 mhs180007 sn 22906 Jan 17 17:58 18SimpleInheritance.pdf
+-rwx--x--x 1 mhs180007 sn 35698 Jan 17 17:58 19Assignment3Blackjack.      pdf
+-rwx--x--x 1 mhs180007 sn 39478 Jan 17 17:58 20SectionHandout5.pdf
+-rwx--x--x 1 mhs180007 sn 64841 Jan 17 17:58 21VirtualFunctions.pdf
+-rwx--x--x 1 mhs180007 sn 14119 Jan 17 17:58 22SectionHandout6.pdf
+-rwx--x--x 1 mhs180007 sn 29706 Jan 17 17:58 23AutumnCS193DMidterm.p      df
+-rwx--x--x 1 mhs180007 sn 13658 Jan 17 17:58 24CS193DMidtermSolution      .pdf
+-rwx--x--x 1 mhs180007 sn 27352 Jan 17 17:58 25OperatorOverloading.p      df
+-rwx--x--x 1 mhs180007 sn 37070 Jan 17 17:58 26Assignment4Stratego.p      df
+-rwx--x--x 1 mhs180007 sn 35835 Jan 17 17:58 27SectionHandout7.pdf
+-rwx--x--x 1 mhs180007 sn 20323 Jan 17 17:58 28Templates.pdf
+-rwx--x--x 1 mhs180007 sn 35400 Jan 17 17:58 29Assignment5Recipe.pdf
+-rwx--x--x 1 mhs180007 sn 50461 Jan 17 17:58 30SectionHandout8.pdf
+-rwx--x--x 1 mhs180007 sn 35718 Jan 17 17:58 31Assignment6Database.p      df
+-rwx--x--x 1 mhs180007 sn 14485 Jan 17 17:58 32Exceptions.pdf
+-rwx--x--x 1 mhs180007 sn 42196 Jan 17 17:58 33GenericProgrammingSec      tion.pdf
+-rwx--x--x 1 mhs180007 sn 23232 Jan 17 17:58 34PracticeCS193DFinal.p      df
+-rwx--x--x 1 mhs180007 sn 23406 Jan 17 17:58 35PracticeCS193DSolutio      n.pdf
+-rwx--x--x 1 mhs180007 sn 20613 Jan 17 17:58 36AutumnCS193DFinal.pdf
+-rwx--x--x 1 mhs180007 sn 29372 Jan 17 17:58 37AutumnCS193DSolution.      pdf
+{cslinux1:~/test} tar czvf test.tar.gz .
+./
+./22SectionHandout6.pdf
+./26Assignment4Stratego.pdf
+./24CS193DMidtermSolution.pdf
+./34PracticeCS193DFinal.pdf
+./17PracticeCS193DSolution.pdf
+./37AutumnCS193DSolution.pdf
+./19Assignment3Blackjack.pdf
+./20SectionHandout5.pdf
+./18SimpleInheritance.pdf
+./11Classes.pdf
+./14CopyConstructors.pdf
+./02CS193DCourseSyllabus.pdf
+./03UnixBasics.pdf
+./33GenericProgrammingSection.pdf
+./15Assignment2RSG.pdf
+./31Assignment6Database.pdf
+./29Assignment5Recipe.pdf
+./35PracticeCS193DSolution.pdf
+./05Assignment1OAG.pdf
+./12SectionHandoutWeek3.pdf
+./28Templates.pdf
+./13Constructors.pdf
+./01CS193DCourseInformation.pdf
+./10AchievingReadability.pdf
+./07CodingStandards.pdf
+./30SectionHandout8.pdf
+./32Exceptions.pdf
+./16PracticeCS193DMidterm.pdf
+./25OperatorOverloading.pdf
+./23AutumnCS193DMidterm.pdf
+./04UnixDevelopment.pdf
+./27SectionHandout7.pdf
+./21VirtualFunctions.pdf
+./08GoodStyle.pdf
+./06SectionHandout2.pdf
+./36AutumnCS193DFinal.pdf
+tar: .: file changed as we read it
+{cslinux1:~/test} ls -ltr
+total 5424
+-rwx--x--x 1 mhs180007 sn  34522 Jan 17 17:58 01CS193DCourseInformation.pdf
+-rwx--x--x 1 mhs180007 sn   8834 Jan 17 17:58 02CS193DCourseSyllabus.pdf
+-rwx--x--x 1 mhs180007 sn  41374 Jan 17 17:58 03UnixBasics.pdf
+-rwx--x--x 1 mhs180007 sn  68165 Jan 17 17:58 04UnixDevelopment.pdf
+-rwx--x--x 1 mhs180007 sn  44336 Jan 17 17:58 05Assignment1OAG.pdf
+-rwx--x--x 1 mhs180007 sn  44748 Jan 17 17:58 06SectionHandout2.pdf
+-rwx--x--x 1 mhs180007 sn  12694 Jan 17 17:58 07CodingStandards.pdf
+-rwx--x--x 1 mhs180007 sn  10243 Jan 17 17:58 08GoodStyle.pdf
+-rwx--x--x 1 mhs180007 sn  22344 Jan 17 17:58 10AchievingReadability.pdf
+-rwx--x--x 1 mhs180007 sn  34888 Jan 17 17:58 11Classes.pdf
+-rwx--x--x 1 mhs180007 sn  56829 Jan 17 17:58 12SectionHandoutWeek3.pdf
+-rwx--x--x 1 mhs180007 sn  12742 Jan 17 17:58 13Constructors.pdf
+-rwx--x--x 1 mhs180007 sn  14789 Jan 17 17:58 14CopyConstructors.pdf
+-rwx--x--x 1 mhs180007 sn  15488 Jan 17 17:58 15Assignment2RSG.pdf
+-rwx--x--x 1 mhs180007 sn  15573 Jan 17 17:58 16PracticeCS193DMidterm.pdf
+-rwx--x--x 1 mhs180007 sn  15061 Jan 17 17:58 17PracticeCS193DSolution.pdf
+-rwx--x--x 1 mhs180007 sn  22906 Jan 17 17:58 18SimpleInheritance.pdf
+-rwx--x--x 1 mhs180007 sn  35698 Jan 17 17:58 19Assignment3Blackjack.pdf
+-rwx--x--x 1 mhs180007 sn  39478 Jan 17 17:58 20SectionHandout5.pdf
+-rwx--x--x 1 mhs180007 sn  64841 Jan 17 17:58 21VirtualFunctions.pdf
+-rwx--x--x 1 mhs180007 sn  14119 Jan 17 17:58 22SectionHandout6.pdf
+-rwx--x--x 1 mhs180007 sn  29706 Jan 17 17:58 23AutumnCS193DMidterm.pdf
+-rwx--x--x 1 mhs180007 sn  13658 Jan 17 17:58 24CS193DMidtermSolution.pdf
+-rwx--x--x 1 mhs180007 sn  27352 Jan 17 17:58 25OperatorOverloading.pdf
+-rwx--x--x 1 mhs180007 sn  37070 Jan 17 17:58 26Assignment4Stratego.pdf
+-rwx--x--x 1 mhs180007 sn  35835 Jan 17 17:58 27SectionHandout7.pdf
+-rwx--x--x 1 mhs180007 sn  20323 Jan 17 17:58 28Templates.pdf
+-rwx--x--x 1 mhs180007 sn  35400 Jan 17 17:58 29Assignment5Recipe.pdf
+-rwx--x--x 1 mhs180007 sn  50461 Jan 17 17:58 30SectionHandout8.pdf
+-rwx--x--x 1 mhs180007 sn  35718 Jan 17 17:58 31Assignment6Database.pdf
+-rwx--x--x 1 mhs180007 sn  14485 Jan 17 17:58 32Exceptions.pdf
+-rwx--x--x 1 mhs180007 sn  42196 Jan 17 17:58 33GenericProgrammingSection.pdf
+-rwx--x--x 1 mhs180007 sn  23232 Jan 17 17:58 34PracticeCS193DFinal.pdf
+-rwx--x--x 1 mhs180007 sn  23406 Jan 17 17:58 35PracticeCS193DSolution.pdf
+-rwx--x--x 1 mhs180007 sn  20613 Jan 17 17:58 36AutumnCS193DFinal.pdf
+-rwx--x--x 1 mhs180007 sn  29372 Jan 17 17:58 37AutumnCS193DSolution.pdf
+-rw------- 1 mhs180007 sn 766175 Jan 17 17:58 test.tar.gz
+{cslinux1:~/test} rm -rf test.tar.gz
+{cslinux1:~/test} cd ..
+{cslinux1:~} rm -Rf test
+{cslinux1:~} g++ helloworld.cpp -o helloworld
+{cslinux1:~} ./helloworld
+!!!Hello        World!!!
+{cslinux1:~} exit
+logout
+
+--------------------------------------------------------------------------
+
+Session stopped
+    - Press <return> to exit tab
+    - Press R to restart session
+    - Press S to save terminal output to file
